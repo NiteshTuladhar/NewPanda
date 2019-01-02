@@ -1,0 +1,80 @@
+.social ul{
+	
+	display: flex;
+	position: relative;
+	top: 55px;
+	left: 39%;
+	transform: translate(-50%,-50%);
+}
+@media (max-width: 900px){
+	.social ul{
+		position: relative;
+		top: 0px;
+		left: 40%;
+	}
+}
+
+
+.social ul li{
+list-style: none;
+}
+.social ul li a{
+width: 35px;
+height: 35px;
+background: #fff;
+text-align: center;
+line-height: 30px;
+ font-size: 15px;
+ margin: 0 10px;
+ display: block;
+ border-radius: 50%;
+ position: relative;
+overflow: hidden;
+border: 3px solid #fff;
+z-index: 1;
+}
+.social ul li a .fa{
+position: relative;
+color: black;
+transition: .5s;
+z-index: 3;
+}
+.social ul li a:hover .fa{
+color: white;
+transform: rotateY(360deg);
+
+}
+
+.social ul li a:before
+{
+content: '';
+position: absolute;
+top:100%;
+left: 0;
+width: 100%;
+height: 100%;
+background:;
+transition: .5s;
+z-index: 2;
+}
+.social ul li a:hover:before{
+	top: 0;
+}
+
+.social ul li:nth-child(1) a:before
+{
+	background: #3b5999;
+}
+.social ul li:nth-child(2) a:before
+{
+	background: #dd4b39;
+}
+.social ul li:nth-child(3) a:before
+{
+	background: #e4405f;
+}
+.social ul li:nth-child(4) a:before
+{
+	background: #55acee;
+}
+.red{ 
