@@ -6,7 +6,6 @@ body {
 }
 @media (max-width: 900px){
   body{
-    width: 100%;
     overflow-x: hidden;
   }
 }
@@ -47,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15px;
+  right: 1175px;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;
@@ -61,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 900px) {
   .back-to-top {
     bottom: 15px;
+    right: 320px;
   }
 }
 
@@ -1369,6 +1369,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media(max-width: 900px){
+  #footer{
+    overflow-wrap: hidden;
+    position: relative;
+    width:71%;
+  }
   #footer .footer-top .footer-info {
 visibility: hidden;
 position: absolute;
@@ -1405,7 +1410,6 @@ position: absolute;
   
   font-family: "Montserrat", sans-serif;
 
-  background:;
   
 
   
@@ -1519,6 +1523,7 @@ position: relative;
 #footer .footer-top .footer-contact {
   position: relative;
   left: 23px; 
+  overflow:hidden; 
 }
 
 #footer .footer-top .footer-contact p {
@@ -1529,13 +1534,6 @@ position: relative;
   left: 23px;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-
-
-
-
-
-
-
   top: 40px;
   color: #000;
 
@@ -1573,6 +1571,28 @@ position: relative;
 
 }
 @media(max-width: 900px){
+  #footer .footer-top h4::before, #footer .footer-top h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 10%;
+  overflow-y: hidden;
+
+}
+
+#footer .footer-top h4::before {
+  right: 0;
+  background: #D6D6D6;
+  overflow-y: hidden;
+}
+
+#footer .footer-top h4::after {
+  background: #000000;
+  width: 120px;
+  overflow-y: hidden;
+}
   #footer .footer-top .footer-info h3{
     position: relative;
     top: 30px;
@@ -1587,16 +1607,20 @@ position: relative;
     top: 0px;
 
   }
+
   #footer .footer-top .footer-contact p {
     position: relative;
     top: 0px;
+    right: 100px;
+    text-align: left;
 
   }
 
   @media(max-width: 900px){
     .bfooter .credits {
       position: relative;
-      top: 50px;
+      top: 72px;
+      width: 100%;
 
     }
     .bfooter .credits a{

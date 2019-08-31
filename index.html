@@ -36,20 +36,6 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="css/social.css" rel="stylesheet">
 
-
-
-
-
-
-
-
-
-  <!-- =======================================================
-    Theme Name: Panda Motion
-    Theme URL: https://bootstrapmade.com/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
 <body>
@@ -296,7 +282,7 @@
     <!--==========================
       Skills Section
     ============================-->
-    <section id="skills">
+  <!--<section id="skills">
       <div class="container">
 
         <header class="section-header">
@@ -339,11 +325,11 @@
         </div>
 
       </div>
-    </section>
+    </section>-->
 
     <!--==========================
       Facts Section
-    ============================-->
+    ============================
     <section id="facts"  class="wow fadeIn">
       <div class="container">
 
@@ -381,7 +367,7 @@
         </div>
 
       </div>
-    </section><!-- #facts -->
+    </section> --><!-- #facts -->
 
     <!--==========================
       Portfolio Section
@@ -811,7 +797,7 @@
           <img src="img/clients/client-12.png" alt="PandaMotions" title="Pandamotions's client">
           <img src="img/clients/client-14.png" alt="PandaMotions" title="Pandamotions's client">
           <img src="img/clients/client-15.png" alt="PandaMotions" title="Pandamotions's client">
-          <img src="img/clients/oracare.png" alt="PandaMotions" title="Pandamotions's client"">
+          <img src="img/clients/oracare.png" alt="PandaMotions" title="Pandamotions's client">
           <img src="img/clients/client-16.png" alt="PandaMotions" title="Pandamotions's client">
           <img src="img/clients/client-7.png" alt="PandaMotions" title="Pandamotions's client">
        
@@ -1059,7 +1045,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
-              <p><a href="+9779818142699">+977 9818142699, +977 9818465684</a></p>
+              <p><a href="+9779818142699">+977 9818142699, +977 9818187266</a></p>
             </div>
           </div>
 
@@ -1132,7 +1118,7 @@
             <h4>Contact Us</h4>
             <p>
               Addrress: Sanepa, Lalitpur, Nepal<br>
-              Phone:+977-9818465684  <br>
+              Phone:+977-9818142699, 9818187266  <br>
               Email: info@pandamotions.com<br>
             </p>
           </div>
@@ -1144,7 +1130,7 @@
              <li><a href="https://www.facebook.com/pand.s.509" target="blank"><i class="fa fa-facebook red" aria-hidden="true"></i></a></li>
              <li><a href="https://www.gmail.com" target="blank"><i class="fa fa-google-plus red" aria-hidden="true"></i></a></li>
              <li><a href="https://www.instagram.com/pandamotions/" target="blank"><i class="fa fa-instagram red" aria-hidden="true"></i></a></li>
-             <li><a href="https://www.twitter.com" target="blank"><i class="fa fa-twitter red" aria-hidden="true"></i></a></li>
+             <li><a href="https://twitter.com/pandamotion001" target="blank"><i class="fa fa-twitter red" aria-hidden="true"></i></a></li>
            </ul>
           </div>
            
@@ -1157,11 +1143,9 @@
 </footer><!-- #footer -->
     <div class="bfooter">    
       <div class="credits">
-        <a href="#">2018©Panda Motions All Rights Reserved</a>
+        <a href="#">2019©Panda Motions All Rights Reserved</a>
       </div>
    </div>
-   
-    
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->
@@ -1209,6 +1193,32 @@ document.getElementById("demo").innerHTML = "Form has been sucessfully submitted
 }
 </script>
 </body>
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="112853859419110"
+  theme_color="#000000"
+  logged_in_greeting="Hello!! Let's have Coffee together "
+  logged_out_greeting="Hello!! Let's have Coffee together ">
+      </div>
 </html>
 
 
